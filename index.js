@@ -39,3 +39,4 @@ addBtn.addEventListener("click", function () {
     equipmentStatus.value = "";
     checkDate.value = "";
 });
+
