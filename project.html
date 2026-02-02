@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Military Equipment Check System</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #eef2f3;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            width: 400px;
+            margin: auto;
+            border-radius: 8px;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 8px;
+            margin: 6px 0;
+        }
+        button {
+            background: darkgreen;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background: green;
+        }
+        .error {
+            color: red;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            background: #e0e0e0;
+            margin: 5px 0;
+            padding: 8px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Military Equipment Check</h2>
+
+    <p class="error" id="errorMsg"></p>
+
+    <input type="text" id="equipmentName" placeholder="Equipment Name (e.g Rifle)">
+
+    <select id="equipmentType">
+        <option value="">Select Equipment Type</option>
+        <option value="Weapon">Weapon</option>
+        <option value="Vehicle">Vehicle</option>
+        <option value="Communication">Communication</option>
+        <option value="Protection">Protection</option>
+    </select>
+
+    <select id="equipmentStatus">
+        <option value="">Select Status</option>
+        <option value="Good">Good</option>
+        <option value="Damaged">Damaged</option>
+        <option value="Missing">Missing</option>
+    </select>
+
+    <input type="date" id="checkDate">
+
+    <button id="addBtn">Add Equipment</button>
+
+    <h3>Checked Equipment List</h3>
+    <ul id="equipmentList"></ul>
+</div>
+
+<script src="project.js"></script>
+</body>
+</html>
